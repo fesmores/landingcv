@@ -3,6 +3,7 @@ body {
   /* background-color: #212529; */
   background-color: #222222;
   overflow-x: hidden;
+  padding-right: 0px;
 }
 
 h1, h2, h4, h5, h6, p {
@@ -85,8 +86,6 @@ h3 {
 
 /* ABOUT SECTION */
 .content-area {
-  /* border: solid 1px #fff; */
-   /* background-color: red;  */
   position: relative;
   width: 100%;
   height: auto;
@@ -113,7 +112,7 @@ h3 {
 .home-photo .hp-inner {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./images/profile.jpg");
+  background-image: url("https://source.unsplash.com/user/erondu/1024x1024");
   /* background-position: calc(85%) calc(60%); */
   height: auto;
   /* display: block; */
@@ -180,13 +179,23 @@ h3 {
   margin-top: 5%;
 }
 
+.page-title .title-string {
+  letter-spacing: 2px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  position: relative;
+}
+
+
 .page-title {
   display: block;
   position: relative;
   background-color: #fdfdfd;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
-  padding: 4% 0% 4% 3%;
+  padding: 4% 7% 4% 6%;
   text-align: left;
   background-color: #252525;
   border-top-color: #333333;
@@ -195,14 +204,14 @@ h3 {
 
 .page-title h1 {
   font-size: 44px;
-  ￼font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
   font-weight: 600;
-  ￼font-style: normal;
-  ￼letter-spacing: 1px;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
 .feature-box {
-  padding: 4%;
+  padding: 3% 7% 4% 7%;
 }
 
 .feature-box h3 {
@@ -226,7 +235,6 @@ h3 {
 }
 
 .item-period {
-  /* background-color: #333; */
   border: solid 2px #007ced;
   border-radius: 30px;
   box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, .78);
@@ -234,26 +242,42 @@ h3 {
   margin: auto;
   text-align: center;
   padding: 12px;
-}
-
-.study-box, .working-experience{
-  padding: 3% 5% 4% 4%;
-}
-
-.study-box .item-period , .working-experience .item-period{
-  ￼background-color: #fff;
-  ￼border: 2px solid #7066ff;
-  ￼border-radius: 30px;
-  border-color: #007ced;
-  ￼color: #666;
   display: inline-block;
-  ￼font-size: 12px;
-  ￼font-weight: 500;
-  ￼line-height: 23px;
-  ￼position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 23px;
+  position: relative;
+  letter-spacing: 2px;
 }
 
-.degree-title{
+.study-box {
+  padding: 3% 10% 4% 7%;
+}
+
+.study-box-digital {
+  padding: 3% 5% 4% 7%;
+}
+
+.before-after {
+  position: relative;
+}
+
+.before-after::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 100%;
+  /* left: -10px; */
+  bottom: -15px;
+  background-color: #333333;
+}
+
+.working-experience {
+  padding: 3% 7% 4% 7%;
+}
+
+.degree-title {
   margin-top: 10px;
   font-size: 1rem;
   color: #666;
@@ -266,4 +290,175 @@ h3 {
   margin: auto;
   padding-left: 10px;
   position: relative;
+}
+
+.block-title {
+  /* padding: 5% 15% 5% 15%; */
+  position: relative;
+}
+
+.block-title h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #666666;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+}
+
+.block-title h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #007ced;
+  /* width: 100%; */
+  height: 2px;
+  bottom: -10px;
+}
+
+
+.progress-bar-text {
+  /* border: solid 2px #fff; */
+  color: white;
+  margin-top: 2%;
+  padding: 3% 13% 3% 13%;
+}
+
+.percentage-span {
+  padding-bottom: 2%;
+}
+
+.meter {
+  height: 10px;
+  position: relative;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border: solid 1px #666;
+  border-radius: 25px;
+  padding: 2px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #007ced;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Skills Percentages */
+
+.skills, .administration-skills, .languages {
+  padding: 5% 0 5% 0;
+}
+
+.percentage-text {
+  display: inline-block;
+  text-align: right;
+}
+
+.meter .percentage-20 {
+  width: 20%;
+}
+
+.meter .percentage-30 {
+  width: 30%;
+}
+
+.meter .percentage-40 {
+  width: 40%;
+}
+
+.meter .percentage-50 {
+  width: 50%;
+}
+
+.meter .percentage-55 {
+  width: 55%;
+}
+
+.meter .percentage-60 {
+  width: 60%;
+}
+
+.meter .percentage-75 {
+  width: 75%;
+}
+
+.meter .percentage-80 {
+  width: 80%;
+}
+
+.meter .percentage-85 {
+  width: 85%;
+}
+/* End Skills Percentages */
+
+/* Languages Percentages */
+
+.meter .percentage-100 {
+  width: 100%;
+}
+
+.meter .percentage-70 {
+  width: 70%;
+}
+
+.meter .percentage-75 {
+  width: 75%;
+}
+
+.meter .percentage-50 {
+  width: 50%;
+}
+
+.meter .percentage-40 {
+  width: 40%;
+}
+
+/* Contact Section */
+
+.contact-details {
+  /* margin: 5% 25% 5% 25%; */
+  padding: 5% 25% 5% 25%;
+}
+
+.contact-text {
+  padding-top: 15px;
+}
+
+.icon-text {
+  font-family: 'Poppins';
+  padding-top: 10px;
+}
+
+/* Footer */
+
+.footer {
+  /* display: block;
+  position: relative; */
+  background-color: #fdfdfd;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 4% 7% 4% 6%;
+  background-color: #252525;
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+
+.social-icon {
+  margin: 30px 20px;
+}
+
+.feature-box:hover {
+  transition-timing-function: background-color 0.5s ease-in-out;
+  background-color: #333333;
+  color: #f2f2f2;
+  
+}
+
+.table-header-string {
+  font-size: 1.5rem;
 }
