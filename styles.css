@@ -117,7 +117,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   /* background-image: url("https://source.unsplash.com/user/erondu/1024x1024"); */
-  background-image: url("images/fesmores-original.jpg");
+  background-image: url("/images/fesmores-original.jpg");
   background-position: calc(45%) calc(10%);
   height: auto;
   /* display: block; */
